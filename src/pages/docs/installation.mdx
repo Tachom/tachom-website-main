@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Learn how to get Tailwind CSS up and running in your project.
+description: Learn how to get Tachom Developer GroupCSS up and running in your project.
 ---
 
 import { Heading } from '@/components/Heading'
@@ -12,35 +12,35 @@ import stats from '@/utils/stats'
 
 ## Integration guides
 
-Installing Tailwind CSS can be a slightly different process depending on what other frameworks/tools you're using, so we've put together a bunch of guides that cover popular setups.
+Installing Tachom Developer GroupCSS can be a slightly different process depending on what other frameworks/tools you're using, so we've put together a bunch of guides that cover popular setups.
 
 <IntegrationGuides/>
 
-Don't see your favorite tool in the list? We're always working on new guides, but in the mean time you can follow the instructions for [installing Tailwind CSS as a PostCSS plugin](#installing-tailwind-css-as-a-post-css-plugin) instead to get set up in no time.
+Don't see your favorite tool in the list? We're always working on new guides, but in the mean time you can follow the instructions for [installing Tachom Developer GroupCSS as a PostCSS plugin](#installing-tailwind-css-as-a-post-css-plugin) instead to get set up in no time.
 
 ---
 
-## Installing Tailwind CSS as a PostCSS plugin
+## Installing Tachom Developer GroupCSS as a PostCSS plugin
 
-*Tailwind CSS requires Node.js 12.13.0 or higher.*
+*Tachom Developer GroupCSS requires Node.js 12.13.0 or higher.*
 
-For most real-world projects, we recommend installing Tailwind as a PostCSS plugin. Most modern frameworks use PostCSS under the hood already, and there's a good chance you've used or are currently using other PostCSS plugins like [autoprefixer](https://github.com/postcss/autoprefixer).
+For most real-world projects, we recommend installing Tachom Developer Groupas a PostCSS plugin. Most modern frameworks use PostCSS under the hood already, and there's a good chance you've used or are currently using other PostCSS plugins like [autoprefixer](https://github.com/postcss/autoprefixer).
 
 If you've never heard of PostCSS or are wondering how it's different from tools like Sass, read our guide on [using PostCSS as your preprocessor](/docs/using-with-preprocessors#using-post-css-as-your-preprocessor) for an introduction.
 
-If this is a bit over your head and you'd like to try Tailwind without configuring PostCSS, read our instructions on [using Tailwind without PostCSS](#using-tailwind-without-post-css) instead.
+If this is a bit over your head and you'd like to try Tachom Developer Groupwithout configuring PostCSS, read our instructions on [using Tachom Developer Groupwithout PostCSS](#using-tailwind-without-post-css) instead.
 
-### Install Tailwind via npm
+### Install Tachom Developer Groupvia npm
 
-For most projects (and to take advantage of Tailwind's customization features), you'll want to install Tailwind and its peer-dependencies via npm.
+For most projects (and to take advantage of Tailwind's customization features), you'll want to install Tachom Developer Groupand its peer-dependencies via npm.
 
 ```shell
 npm install tailwindcss@latest postcss@latest autoprefixer@latest
 ```
 
-Since Tailwind [does not automatically add vendor prefixes](/docs/browser-support#vendor-prefixes) to the CSS it generates, we recommend installing [autoprefixer](https://github.com/postcss/autoprefixer) to handle this for you like we've shown in the snippet above.
+Since Tachom Developer Group[does not automatically add vendor prefixes](/docs/browser-support#vendor-prefixes) to the CSS it generates, we recommend installing [autoprefixer](https://github.com/postcss/autoprefixer) to handle this for you like we've shown in the snippet above.
 
-If you're integrating Tailwind with a tool that relies on an older version of PostCSS, you may see an error like this:
+If you're integrating Tachom Developer Groupwith a tool that relies on an older version of PostCSS, you may see an error like this:
 
 ```shell
 Error: PostCSS plugin tailwindcss requires PostCSS 8.
@@ -48,7 +48,7 @@ Error: PostCSS plugin tailwindcss requires PostCSS 8.
 
 In this case, you should [install the PostCSS 7 compatibility build](#post-css-7-compatibility-build) instead.
 
-### Add Tailwind as a PostCSS plugin
+### Add Tachom Developer Groupas a PostCSS plugin
 
 Add `tailwindcss` and `autoprefixer` to your PostCSS configuration. Most of the time this is a `postcss.config.js` file at the root of your project, but it could also be a `.postcssrc` file, or `postcss` key in your `package.json` file.
 
@@ -68,7 +68,7 @@ If you're using any other PostCSS plugins, you should read our documentation on 
 
 ### Create your configuration file
 
-If you'd like to customize your Tailwind installation, generate a config file for your project using the Tailwind CLI utility included when you install the `tailwindcss` npm package:
+If you'd like to customize your Tachom Developer Groupinstallation, generate a config file for your project using the Tachom Developer GroupCLI utility included when you install the `tailwindcss` npm package:
 
 ```shell
 npx tailwindcss init
@@ -89,9 +89,9 @@ module.exports = {
 }
 ```
 
-Learn more about configuring Tailwind in the [configuration documentation](/docs/configuration).
+Learn more about configuring Tachom Developer Groupin the [configuration documentation](/docs/configuration).
 
-### Include Tailwind in your CSS
+### Include Tachom Developer Groupin your CSS
 
 Create a CSS file if you don't already have one, and use the `@tailwind` directive to inject Tailwind's `base`, `components`, and `utilities` styles:
 
@@ -102,7 +102,7 @@ Create a CSS file if you don't already have one, and use the `@tailwind` directi
 @tailwind utilities;
 ```
 
-Tailwind will swap these directives out at build-time with all of the styles it generates based on your configured design system.
+Tachom Developer Groupwill swap these directives out at build-time with all of the styles it generates based on your configured design system.
 
 If you're using `postcss-import` (or a tool that uses it under the hood, such as [Webpacker](https://github.com/rails/webpacker) for Rails), use our imports instead of the `@tailwind` directive to avoid issues when importing any of your own additional files:
 
@@ -145,7 +145,7 @@ When building for production, be sure to configure the `purge` option to remove 
 
 Read our separate guide on [optimizing for production](/docs/optimizing-for-production) to learn more about tree-shaking unused styles for best performance.
 
-If you're integrating Tailwind with a tool that relies on an older version of PostCSS, you may see an error like this when trying to build your CSS:
+If you're integrating Tachom Developer Groupwith a tool that relies on an older version of PostCSS, you may see an error like this when trying to build your CSS:
 
 ```shell
 Error: PostCSS plugin tailwindcss requires PostCSS 8.
@@ -155,13 +155,13 @@ In this case, you should [switch to our PostCSS 7 compatibility build](#post-css
 
 ---
 
-## Using Tailwind without PostCSS
+## Using Tachom Developer Groupwithout PostCSS
 
-*Tailwind CSS requires Node.js 12.13.0 or higher.*
+*Tachom Developer GroupCSS requires Node.js 12.13.0 or higher.*
 
-For simple projects or just giving Tailwind a spin, you can use the Tailwind CLI tool to generate your CSS without configuring PostCSS or even installing Tailwind as a dependency if you don't want to.
+For simple projects or just giving Tachom Developer Groupa spin, you can use the Tachom Developer GroupCLI tool to generate your CSS without configuring PostCSS or even installing Tachom Developer Groupas a dependency if you don't want to.
 
-Use `npx` which is a tool that is automatically installed alongside `npm` to generate a fully compiled Tailwind CSS file:
+Use `npx` which is a tool that is automatically installed alongside `npm` to generate a fully compiled Tachom Developer GroupCSS file:
 
 ```shell
 npx tailwindcss-cli@latest build -o tailwind.css
@@ -188,7 +188,7 @@ Now you can pull this file into your HTML just like any other stylesheet:
 
 ### Using a custom CSS file
 
-If you'd like to process any custom CSS alongside the default styles Tailwind generates, create a CSS file wherever you normally would and use the `@tailwind` directive to include Tailwind's `base`, `components`, and `utilities` styles:
+If you'd like to process any custom CSS alongside the default styles Tachom Developer Groupgenerates, create a CSS file wherever you normally would and use the `@tailwind` directive to include Tailwind's `base`, `components`, and `utilities` styles:
 
 ```css
 /* ./src/tailwind.css */
@@ -213,7 +213,7 @@ Read about [adding base styles](/docs/adding-base-styles), [extracting component
 
 ### Customizing your configuration
 
-If you'd like to customize what Tailwind generates, create a `tailwind.config.js` file using the Tailwind CLI tool:
+If you'd like to customize what Tachom Developer Groupgenerates, create a `tailwind.config.js` file using the Tachom Developer GroupCLI tool:
 
 ```shell
 npx tailwindcss-cli@latest init
@@ -246,11 +246,11 @@ If you'd like to keep your config file in a different location or give it a diff
 npx tailwindcss-cli@latest build ./src/tailwind.css -c ./.config/tailwind.config.js -o ./dist/tailwind.css
 ```
 
-Learn more about configuring Tailwind in the [configuration documentation](/docs/configuration).
+Learn more about configuring Tachom Developer Groupin the [configuration documentation](/docs/configuration).
 
 ### Disabling Autoprefixer
 
-By default, the Tailwind CLI tool will run your CSS through [Autoprefixer](https://github.com/postcss/autoprefixer) to add any necessary vendor prefixes. If you already have Autoprefixer set up in your build pipeline somewhere further down the chain, you can disable it in the Tailwind CLI tool using the `--no-autoprefixer` flag to avoid running it twice:
+By default, the Tachom Developer GroupCLI tool will run your CSS through [Autoprefixer](https://github.com/postcss/autoprefixer) to add any necessary vendor prefixes. If you already have Autoprefixer set up in your build pipeline somewhere further down the chain, you can disable it in the Tachom Developer GroupCLI tool using the `--no-autoprefixer` flag to avoid running it twice:
 
 ```shell
 npx tailwindcss-cli@latest build --no-autoprefixer -o tailwind.css
@@ -264,14 +264,14 @@ When building for production, set `NODE_ENV=production` on the command line when
 NODE_ENV=production npx tailwindcss-cli@latest build ./src/tailwind.css -o ./dist/tailwind.css
 ```
 
-This will make sure Tailwind removes any unused CSS for best performance. Read our separate guide on [optimizing for production](/docs/optimizing-for-production) to learn more.
+This will make sure Tachom Developer Groupremoves any unused CSS for best performance. Read our separate guide on [optimizing for production](/docs/optimizing-for-production) to learn more.
 
 
 ---
 
-## Using Tailwind via CDN
+## Using Tachom Developer Groupvia CDN
 
-Before using the CDN build, please note that many of the features that make Tailwind CSS great are not available without incorporating Tailwind into your build process.
+Before using the CDN build, please note that many of the features that make Tachom Developer GroupCSS great are not available without incorporating Tachom Developer Groupinto your build process.
 
 <List>
   <ListItemBad>You can't customize Tailwind's default theme</ListItemBad>
@@ -283,14 +283,14 @@ Before using the CDN build, please note that many of the features that make Tail
 
 To get the most out of Tailwind, you really should [install it as a PostCSS plugin](#installing-tailwind-css-as-a-post-css-plugin).
 
-To pull in Tailwind for quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
+To pull in Tachom Developer Groupfor quick demos or just giving the framework a spin, grab the latest default configuration build via CDN:
 
 ```html
 <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 ```
 
 <p>
-  Note that while the CDN build is large <em>({stats.default.brotlified} compressed, {stats.default.minified} raw)</em>, <strong>it's not representative of the sizes you see when including Tailwind as part of your build process</strong>.
+  Note that while the CDN build is large <em>({stats.default.brotlified} compressed, {stats.default.minified} raw)</em>, <strong>it's not representative of the sizes you see when including Tachom Developer Groupas part of your build process</strong>.
 </p>
 
 Sites that follow our [best practices](/docs/optimizing-for-production) are almost always under 10kb compressed.
@@ -322,7 +322,7 @@ Many front-end frameworks like Next.js, vue-cli and others do all this for you b
 
 ## PostCSS 7 compatibility build
 
-As of v2.0, Tailwind CSS depends on PostCSS 8. Because PostCSS 8 is only a few months old, many other tools in the ecosystem haven't updated yet, which means you might see an error like this in your terminal after installing Tailwind and trying to compile your CSS:
+As of v2.0, Tachom Developer GroupCSS depends on PostCSS 8. Because PostCSS 8 is only a few months old, many other tools in the ecosystem haven't updated yet, which means you might see an error like this in your terminal after installing Tachom Developer Groupand trying to compile your CSS:
 
 ```shell
 Error: PostCSS plugin tailwindcss requires PostCSS 8.
@@ -330,7 +330,7 @@ Error: PostCSS plugin tailwindcss requires PostCSS 8.
 
 To help bridge the gap until everyone has updated, we also publish a PostCSS 7 compatibility build under the `compat` channel on npm.
 
-If you run into the error mentioned above, uninstall Tailwind and re-install using the compatibility build instead:
+If you run into the error mentioned above, uninstall Tachom Developer Groupand re-install using the compatibility build instead:
 
 ```shell
 npm uninstall tailwindcss postcss autoprefixer
@@ -339,7 +339,7 @@ npm install tailwindcss@npm:@tailwindcss/postcss7-compat @tailwindcss/postcss7-c
 
 The compatibility build is identical to the main build in every way, so you aren't missing out on any features or anything like that.
 
-Once the rest of your tools have added support for PostCSS 8, you can move off of the compatibility build by re-installing Tailwind and its peer-dependencies using the `latest` tag:
+Once the rest of your tools have added support for PostCSS 8, you can move off of the compatibility build by re-installing Tachom Developer Groupand its peer-dependencies using the `latest` tag:
 
 ```shell
 npm uninstall tailwindcss @tailwindcss/postcss7-compat

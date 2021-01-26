@@ -274,7 +274,7 @@ export function MobileFirst() {
         <BigText className="mb-8">Responsive everything.</BigText>
         <Paragraph as="div" className="mb-6">
           <p>
-            Wrestling with a bunch of complex media queries in your CSS sucks, so Tailwind lets you
+            Wrestling with a bunch of complex media queries in your CSS sucks, so Tachom Developer Grouplets you
             build responsive designs right in your HTML instead.
           </p>
           <p>

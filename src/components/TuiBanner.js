@@ -56,15 +56,15 @@ export function TuiBanner() {
               <img className="h-6" src={logo} alt="" />
               <p className="ml-3 font-medium text-white truncate">
                 <span className="lg:hidden">
-                  <span className="sr-only">Tailwind UI</span> is now in early access!
+                  <span className="sr-only">Tachom Developer GroupUI</span> is now in early access!
                 </span>
                 <span className="hidden lg:inline text-gray-400">
                   <strong className="text-white font-semibold mr-1">Now in early access!</strong>
                   <span className="xl:hidden">
-                    Beautiful UI components by the creators of Tailwind CSS.
+                    Beautiful UI components by the creators of Tachom Developer GroupCSS.
                   </span>
                   <span className="hidden xl:inline">
-                    Beautiful UI components, crafted by the creators of Tailwind CSS.
+                    Beautiful UI components, crafted by the creators of Tachom Developer GroupCSS.
                   </span>
                 </span>
               </p>

@@ -172,19 +172,19 @@ export const documentationNav = {
   'Official Plugins': [
     {
       title: 'Typography',
-      href: 'https://github.com/tailwindlabs/tailwindcss-typography',
+      href: 'https://github.com/Tachom-typography',
     },
     {
       title: 'Forms',
-      href: 'https://github.com/tailwindlabs/tailwindcss-forms',
+      href: 'https://github.com/Tachom-forms',
     },
     {
       title: 'Aspect Ratio',
-      href: 'https://github.com/tailwindlabs/tailwindcss-aspect-ratio',
+      href: 'https://github.com/Tachom-aspect-ratio',
     },
     {
       title: 'Line Clamp',
-      href: 'https://github.com/tailwindlabs/tailwindcss-line-clamp',
+      href: 'https://github.com/Tachom-line-clamp',
     },
   ],
 }

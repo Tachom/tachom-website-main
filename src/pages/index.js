@@ -74,14 +74,14 @@ export default function Home() {
         <meta
           key="twitter:title"
           name="twitter:title"
-          content="Tailwind CSS - Rapidly build modern websites without ever leaving your HTML."
+          content="Tachom Developer GroupCSS - Rapidly build modern websites without ever leaving your HTML."
         />
         <meta
           key="og:title"
           property="og:title"
-          content="Tailwind CSS - Rapidly build modern websites without ever leaving your HTML."
+          content="Tachom Developer GroupCSS - Rapidly build modern websites without ever leaving your HTML."
         />
-        <title>Tailwind CSS - Rapidly build modern websites without ever leaving your HTML.</title>
+        <title>Tachom Developer GroupCSS - Rapidly build modern websites without ever leaving your HTML.</title>
       </Head>
       <header className="relative z-10 max-w-screen-lg xl:max-w-screen-xl mx-auto">
         <div className="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">
@@ -95,10 +95,10 @@ export default function Home() {
                 </a>
               </NextLink>
               <a
-                href="https://github.com/tailwindlabs/tailwindcss"
+                href="https://github.com/Tachom"
                 className="text-gray-400 hover:text-gray-500 transition-colors duration-200"
               >
-                <span className="sr-only">Tailwind CSS on GitHub</span>
+                <span className="sr-only">Tachom Developer GroupCSS on GitHub</span>
                 <svg width="24" height="24" viewBox="0 0 16 16" fill="currentColor">
                   <path
                     fillRule="evenodd"
@@ -166,7 +166,7 @@ export default function Home() {
                 />
               </div>
               <div className="text-gray-900">Adam Wathan</div>
-              <div className="text-light-blue-600">Creator of Tailwind CSS</div>
+              <div className="text-light-blue-600">Creator of Tachom Developer GroupCSS</div>
             </figcaption>
           </figure>
         </div>

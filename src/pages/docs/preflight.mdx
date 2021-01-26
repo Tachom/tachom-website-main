@@ -1,6 +1,6 @@
 ---
 title: Preflight
-description: An opinionated set of base styles for Tailwind projects.
+description: An opinionated set of base styles for Tachom Developer Groupprojects.
 ---
 
 import { Heading } from '@/components/Heading'
@@ -8,9 +8,9 @@ import { ConfigSample } from '@/components/ConfigSample'
 
 ## <Heading hidden>Overview</Heading>
 
-Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize), Preflight is a set of base styles for Tailwind projects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
+Built on top of [modern-normalize](https://github.com/sindresorhus/modern-normalize), Preflight is a set of base styles for Tachom Developer Groupprojects that are designed to smooth over cross-browser inconsistencies and make it easier for you to work within the constraints of your design system.
 
-Tailwind automatically injects these styles when you include `@tailwind base` in your CSS:
+Tachom Developer Groupautomatically injects these styles when you include `@tailwind base` in your CSS:
 
 ```css
 @tailwind base; /* Preflight will be injected here */
@@ -150,7 +150,7 @@ If you ever need to make one of these elements `inline` instead of `block`, simp
 
 ## Border styles are reset globally
 
-In order to make it easy to add a border by simply adding the `border` class, Tailwind overrides the default border styles for all elements with the following rules:
+In order to make it easy to add a border by simply adding the `border` class, Tachom Developer Groupoverrides the default border styles for all elements with the following rules:
 
 ```css
 *,
@@ -164,7 +164,7 @@ In order to make it easy to add a border by simply adding the `border` class, Ta
 
 Since the `border` class only sets the `border-width` property, this reset ensures that adding that class always adds a solid 1px border using your configured default border color.
 
-This can cause some unexpected results when integrating certain third-party libraries, like [Google maps](https://github.com/tailwindlabs/tailwindcss/issues/484) for example.
+This can cause some unexpected results when integrating certain third-party libraries, like [Google maps](https://github.com/Tachom/issues/484) for example.
 
 When you run into situations like this, you can work around them by overriding the Preflight styles with your own custom CSS:
 
@@ -224,7 +224,7 @@ Learn more in the [adding base styles documentation](/docs/adding-base-styles).
 
 ## Disabling Preflight
 
-If you'd like to completely disable Preflight — perhaps because you're integrating Tailwind into an existing project or because you'd like to provide your own base styles — all you need to do is set `preflight` to `false` in the `corePlugins` section of your `tailwind.config.js` file:
+If you'd like to completely disable Preflight — perhaps because you're integrating Tachom Developer Groupinto an existing project or because you'd like to provide your own base styles — all you need to do is set `preflight` to `false` in the `corePlugins` section of your `tailwind.config.js` file:
 
 <ConfigSample
   path="corePlugins"

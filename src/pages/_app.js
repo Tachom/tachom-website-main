@@ -56,7 +56,7 @@ export default function App({ Component, pageProps, router }) {
     : {}
   const meta = Component.layoutProps?.meta || {}
   const description =
-    meta.metaDescription || meta.description || 'Documentation for the Tailwind CSS framework.'
+    meta.metaDescription || meta.description || 'Documentation for the Tachom Developer GroupCSS framework.'
 
   if (router.pathname.startsWith('/examples/')) {
     return <Component {...pageProps} />
@@ -64,7 +64,7 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <>
-      <Title suffix="Tailwind CSS">{meta.metaTitle || meta.title}</Title>
+      <Title suffix="Tachom Developer GroupCSS">{meta.metaTitle || meta.title}</Title>
       <Head>
         <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
         <meta key="twitter:site" name="twitter:site" content="@tailwindcss" />

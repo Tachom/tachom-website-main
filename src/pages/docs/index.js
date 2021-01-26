@@ -63,25 +63,25 @@ const whatsNew = [
 
 const latestUpdates = [
   {
-    title: 'Tailwind CSS v2.0',
+    title: 'Tachom Developer GroupCSS v2.0',
     date: '2020-11-18T17:45:00.000Z',
     url: 'https://blog.tailwindcss.com/tailwindcss-v2',
     description:
-      "Today we're finally releasing Tailwind CSS v2.0, including an all-new color palette, dark mode support, and tons more!",
+      "Today we're finally releasing Tachom Developer GroupCSS v2.0, including an all-new color palette, dark mode support, and tons more!",
   },
   {
-    title: 'Tailwind CSS v1.9.0',
+    title: 'Tachom Developer GroupCSS v1.9.0',
     date: '2020-10-13T18:30:00.000Z',
     url: 'https://blog.tailwindcss.com/tailwindcss-1-9',
     description:
-      'We just released Tailwind CSS v1.9 which adds support for configuration presets, useful new CSS grid utilities, extended border radius, rotate, and skew scales, helpful accessibility improvements, and more!',
+      'We just released Tachom Developer GroupCSS v1.9 which adds support for configuration presets, useful new CSS grid utilities, extended border radius, rotate, and skew scales, helpful accessibility improvements, and more!',
   },
   {
-    title: 'Introducing Tailwind Play',
+    title: 'Introducing Tachom Developer GroupPlay',
     date: '2020-10-07T13:00:00.000Z',
     url: 'https://blog.tailwindcss.com/introducing-tailwind-play',
     description:
-      "Today we're excited to release the first version of Tailwind Play, an advanced online playground for Tailwind CSS that lets you use all of Tailwind's build-time features directly in the browser.",
+      "Today we're excited to release the first version of Tachom Developer GroupPlay, an advanced online playground for Tachom Developer GroupCSS that lets you use all of Tailwind's build-time features directly in the browser.",
   },
   {
     title: 'Headless UI: Unstyled, Accessible UI Components',
@@ -98,10 +98,10 @@ export default function DocsLandingPage() {
   return (
     <div className="px-4 sm:px-6 xl:px-8 pt-10 pb-16">
       <h1 className="text-5xl leading-none font-extrabold text-gray-900 tracking-tight mb-4">
-        Getting started with Tailwind CSS
+        Getting started with Tachom Developer GroupCSS
       </h1>
       <p className="text-2xl tracking-tight mb-10">
-        Learn Tailwind the way that best matches your learning style.
+        Learn Tachom Developer Groupthe way that best matches your learning style.
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6 xl:gap-8">
         <section className="flex">
@@ -110,7 +110,7 @@ export default function DocsLandingPage() {
               <div className="sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
                 <h2 className="text-xl font-semibold mb-2 text-shadow">Read the docs</h2>
                 <p className="font-medium text-violet-100 text-shadow mb-4">
-                  Learn how to get Tailwind set up in your project.
+                  Learn how to get Tachom Developer Groupset up in your project.
                 </p>
                 <Link href="/docs/installation">
                   <a className="mt-auto bg-violet-800 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold py-2 px-4 inline-flex">
@@ -136,7 +136,7 @@ export default function DocsLandingPage() {
               <div className="sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
                 <h2 className="text-xl font-semibold mb-2 text-shadow">Try it in the browser</h2>
                 <p className="font-medium text-rose-100 text-shadow mb-4">
-                  Build something with Tailwind in our online playground.
+                  Build something with Tachom Developer Groupin our online playground.
                 </p>
                 <a
                   href="https://play.tailwindcss.com/"
@@ -158,7 +158,7 @@ export default function DocsLandingPage() {
               <div className="sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
                 <h2 className="text-xl font-semibold mb-2 text-shadow">Watch the screencasts</h2>
                 <p className="font-medium text-amber-100 text-shadow mb-4">
-                  Learn more about Tailwind directly from the team on our channel.
+                  Learn more about Tachom Developer Groupdirectly from the team on our channel.
                 </p>
                 <Link href="https://www.youtube.com/tailwindlabs">
                   <a className="mt-auto bg-amber-900 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold py-2 px-4 inline-flex">
@@ -177,11 +177,11 @@ export default function DocsLandingPage() {
         </section>
         <section className="md:col-span-3 flex flex-wrap md:flex-nowrap items-center bg-gray-800 shadow-lg rounded-2xl py-6 md:py-4 px-6 md:pr-5 space-y-4 md:space-y-0 md:space-x-8">
           <h2 className="flex-none">
-            <span className="sr-only">Tailwind UI</span>
+            <span className="sr-only">Tachom Developer GroupUI</span>
             <TuiLogo className="w-40 h-auto" />
           </h2>
           <p className="flex-auto text-white text-lg font-medium">
-            <Widont>Beautiful UI components, crafted by the creators of Tailwind CSS</Widont>
+            <Widont>Beautiful UI components, crafted by the creators of Tachom Developer GroupCSS</Widont>
           </p>
           <a
             href="https://tailwindui.com/components"

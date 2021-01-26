@@ -19,7 +19,7 @@ const footerNav = {
   },
   Community: {
     items: [
-      { title: 'GitHub', href: 'https://github.com/tailwindlabs/tailwindcss' },
+      { title: 'GitHub', href: 'https://github.com/Tachom' },
       { title: 'Discord', href: '/discord' },
       { title: 'Twitter', href: 'https://twitter.com/tailwindcss' },
       { title: 'YouTube', href: 'https://www.youtube.com/tailwindlabs' },

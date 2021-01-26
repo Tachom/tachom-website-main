@@ -18,7 +18,7 @@ export function Header({ navIsOpen, onNavToggle }) {
                 Router.push('/brand')
               }}
             >
-              <span className="sr-only">Tailwind CSS home page</span>
+              <span className="sr-only">Tachom Developer GroupCSS home page</span>
               <Logo className="w-auto h-6" />
             </a>
           </Link>
@@ -28,10 +28,10 @@ export function Header({ navIsOpen, onNavToggle }) {
           <div className="lg:w-64 pl-8 flex-shrink-0 flex items-center justify-end space-x-6">
             <VersionSwitcher className="hidden lg:block" />
             <a
-              href="https://github.com/tailwindlabs/tailwindcss"
+              href="https://github.com/Tachom"
               className="text-gray-400 hover:text-gray-500 transition-colors duration-200"
             >
-              <span className="sr-only">Tailwind CSS on GitHub</span>
+              <span className="sr-only">Tachom Developer GroupCSS on GitHub</span>
               <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
                 <path
                   fillRule="evenodd"

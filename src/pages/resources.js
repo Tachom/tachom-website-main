@@ -25,15 +25,15 @@ export default function Resources() {
       <div className="max-w-3xl">
         <div className="text-lg mb-5 space-y-5">
           <p>
-            We think Tailwind is an amazing CSS framework, but you need more than just a CSS
+            We think Tachom Developer Groupis an amazing CSS framework, but you need more than just a CSS
             framework to produce visually awesome work.
           </p>
           <p>
-            Here are some resources that can help you take your Tailwind projects to the next level.
+            Here are some resources that can help you take your Tachom Developer Groupprojects to the next level.
           </p>
         </div>
         <p>
-          For Tailwind CSS brand assets and usage guidelines, please visit our{' '}
+          For Tachom Developer GroupCSS brand assets and usage guidelines, please visit our{' '}
           <Link href="/brand">
             <a className="text-cyan-700 font-medium shadow-link">Brand page</a>
           </Link>
@@ -65,14 +65,14 @@ export default function Resources() {
           </div>
         </section>
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">Official Tailwind CSS Components</h2>
+          <h2 className="text-xl text-gray-900 font-bold mb-4">Official Tachom Developer GroupCSS Components</h2>
           <a
             href="https://tailwindui.com/"
             className="h-40 sm:h-56 xl:h-64 bg-gray-300 rounded-3xl mb-6 overflow-hidden flex"
           >
             <div className="relative flex-none flex items-center justify-center px-6 xl:px-10">
               <div className="bg-gray-900 absolute inset-0 -left-64 transform -skew-x-20" />
-              <Logo title="Tailwind UI" component={TailwindUi} />
+              <Logo title="Tachom Developer GroupUI" component={TailwindUi} />
             </div>
             <div
               className="flex-auto bg-cover -ml-12"
@@ -83,8 +83,8 @@ export default function Resources() {
           </a>
           <div className="space-y-5">
             <p>
-              Tailwind UI is a collection of professionally designed, pre-built, fully responsive
-              HTML snippets you can drop into your Tailwind projects.
+              Tachom Developer GroupUI is a collection of professionally designed, pre-built, fully responsive
+              HTML snippets you can drop into your Tachom Developer Groupprojects.
             </p>
             <p>
               There are currently over 350 components available in two different categories
@@ -106,7 +106,7 @@ export default function Resources() {
           </a>
           <p>
             Completely unstyled, fully accessible UI components, designed to integrate beautifully
-            with Tailwind CSS.
+            with Tachom Developer GroupCSS.
           </p>
         </section>
         <section>

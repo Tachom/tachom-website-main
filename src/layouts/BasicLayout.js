@@ -13,7 +13,7 @@ export function BasicLayout({ children, meta, classes, tableOfContents }) {
       <PageHeader
         title={meta.title}
         description={meta.description}
-        badge={{ key: 'Tailwind CSS version', value: meta.featureVersion }}
+        badge={{ key: 'Tachom Developer GroupCSS version', value: meta.featureVersion }}
         border={meta.headerSeparator !== false}
       />
       <div className="flex">

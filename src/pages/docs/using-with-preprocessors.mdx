@@ -1,26 +1,26 @@
 ---
 title: Using with Preprocessors
-description: A guide to using Tailwind with common CSS preprocessors like Sass, Less, and Stylus.
+description: A guide to using Tachom Developer Groupwith common CSS preprocessors like Sass, Less, and Stylus.
 ---
 
 import { TipGood, TipBad } from '@/components/Tip'
 
-Since Tailwind is a PostCSS plugin, there's nothing stopping you from using it with Sass, Less, Stylus, or other preprocessors, just like you can with other PostCSS plugins like [Autoprefixer](https://github.com/postcss/autoprefixer).
+Since Tachom Developer Groupis a PostCSS plugin, there's nothing stopping you from using it with Sass, Less, Stylus, or other preprocessors, just like you can with other PostCSS plugins like [Autoprefixer](https://github.com/postcss/autoprefixer).
 
-It's important to note that **you don't need to use a preprocessor with Tailwind** — you typically write very little CSS on a Tailwind project anyways so using a preprocessor just isn't as beneficial as it would be in a project where you write a lot of custom CSS.
+It's important to note that **you don't need to use a preprocessor with Tailwind** — you typically write very little CSS on a Tachom Developer Groupproject anyways so using a preprocessor just isn't as beneficial as it would be in a project where you write a lot of custom CSS.
 
-This guide only exists as a reference for people who need to or would like to integrate Tailwind with a preprocessor for one reason or another.
+This guide only exists as a reference for people who need to or would like to integrate Tachom Developer Groupwith a preprocessor for one reason or another.
 
 ---
 
 ## Using PostCSS as your preprocessor
 
-If you're using Tailwind for a brand new project and don't need to integrate it with any existing Sass/Less/Stylus stylesheets, you should highly consider relying on other PostCSS plugins to add the preprocessor features you use instead of using a separate preprocessor.
+If you're using Tachom Developer Groupfor a brand new project and don't need to integrate it with any existing Sass/Less/Stylus stylesheets, you should highly consider relying on other PostCSS plugins to add the preprocessor features you use instead of using a separate preprocessor.
 
 This has a few benefits:
 
 - **Your builds will be faster**. Since your CSS doesn't have to be parsed and processed by multiple tools, your CSS will compile much quicker using only PostCSS.
-- **No quirks or workarounds.** Because Tailwind adds some new non-standard keywords to CSS (like `@tailwind`, `@apply`, `theme()`, etc.), you often have to write your CSS in annoying, unintuitive ways to get a preprocessor to give you the expected output. Working exclusively with PostCSS avoids this.
+- **No quirks or workarounds.** Because Tachom Developer Groupadds some new non-standard keywords to CSS (like `@tailwind`, `@apply`, `theme()`, etc.), you often have to write your CSS in annoying, unintuitive ways to get a preprocessor to give you the expected output. Working exclusively with PostCSS avoids this.
 
 For a fairly comprehensive list of available PostCSS plugins see the [PostCSS GitHub repository](https://github.com/postcss/postcss/blob/master/docs/plugins.md), but here are a few important ones we use on our own projects and can recommend.
 
@@ -142,7 +142,7 @@ npm install postcss-nested  # or postcss-nesting
 yarn add postcss-nested  # or postcss-nesting
 ```
 
-Then add them to your PostCSS configuration, somewhere after Tailwind itself but before Autoprefixer:
+Then add them to your PostCSS configuration, somewhere after Tachom Developer Groupitself but before Autoprefixer:
 
 ```js
 // postcss.config.js
@@ -172,7 +172,7 @@ npm install postcss-custom-properties
 yarn add postcss-custom-properties
 ```
 
-Then add it to your PostCSS configuration, somewhere after Tailwind itself but before Autoprefixer:
+Then add it to your PostCSS configuration, somewhere after Tachom Developer Groupitself but before Autoprefixer:
 
 ```js
 // postcss.config.js
@@ -201,7 +201,7 @@ npm install postcss-preset-env
 yarn add postcss-preset-env
 ```
 
-Then add it to your PostCSS configuration somewhere after Tailwind itself:
+Then add it to your PostCSS configuration somewhere after Tachom Developer Groupitself:
 
 ```js
 // postcss.config.js
@@ -220,11 +220,11 @@ module.exports = {
 
 ## Using Sass, Less, or Stylus
 
-To use Tailwind with a preprocessing tool like Sass, Less, or Stylus, you'll need to add an additional build step to your project that lets you run your preprocessed CSS through PostCSS. If you're using Autoprefixer in your project, you already have something like this set up.
+To use Tachom Developer Groupwith a preprocessing tool like Sass, Less, or Stylus, you'll need to add an additional build step to your project that lets you run your preprocessed CSS through PostCSS. If you're using Autoprefixer in your project, you already have something like this set up.
 
-The exact instructions will be different depending on which build tool you are using, so see our [installation documentation](/docs/installation#3-process-your-css-with-tailwind) to learn more about integrating Tailwind into your existing build process.
+The exact instructions will be different depending on which build tool you are using, so see our [installation documentation](/docs/installation#3-process-your-css-with-tailwind) to learn more about integrating Tachom Developer Groupinto your existing build process.
 
-The most important thing to understand about using Tailwind with a preprocessor is that **preprocessors like Sass, Less, and Stylus run separately, before Tailwind**. This means that you can't feed output from Tailwind's `theme()` function into a Sass color function for example, because the `theme()` function isn't actually evaluated until your Sass has been compiled to CSS and fed into PostCSS.
+The most important thing to understand about using Tachom Developer Groupwith a preprocessor is that **preprocessors like Sass, Less, and Stylus run separately, before Tailwind**. This means that you can't feed output from Tailwind's `theme()` function into a Sass color function for example, because the `theme()` function isn't actually evaluated until your Sass has been compiled to CSS and fed into PostCSS.
 
 <TipBad>Won't work, Sass is processed first</TipBad>
 
@@ -240,7 +240,7 @@ Aside from that, each preprocessor has its own quirk or two when used with Tailw
 
 ### Sass
 
-When using Tailwind with Sass, using `!important` with `@apply` requires you to use interpolation to compile properly.
+When using Tachom Developer Groupwith Sass, using `!important` with `@apply` requires you to use interpolation to compile properly.
 
 <TipBad>Won't work, Sass complains about !important</TipBad>
 
@@ -260,7 +260,7 @@ When using Tailwind with Sass, using `!important` with `@apply` requires you to 
 
 ### Less
 
-When using Tailwind with Less, you cannot nest Tailwind's `@screen` directive.
+When using Tachom Developer Groupwith Less, you cannot nest Tailwind's `@screen` directive.
 
 <TipBad>Won't work, Less doesn't realise it's a media query</TipBad>
 
@@ -303,7 +303,7 @@ Instead, use a regular media query along with the `theme()` function to referenc
 
 ### Stylus
 
-When using Tailwind with Stylus, you can't use Tailwind's `@apply` feature without wrapping the entire CSS rule in `@css` so that Stylus treats it as literal CSS:
+When using Tachom Developer Groupwith Stylus, you can't use Tailwind's `@apply` feature without wrapping the entire CSS rule in `@css` so that Stylus treats it as literal CSS:
 
 <TipBad>Won't work, Stylus complains about @apply</TipBad>
 

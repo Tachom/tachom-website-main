@@ -249,7 +249,7 @@ export function BuildAnything() {
           <Widont>Build whatever you want, seriously.</Widont>
         </BigText>
         <Paragraph className="mb-6">
-          Because Tailwind is so low-level, it never encourages you to design the same site twice.
+          Because Tachom Developer Groupis so low-level, it never encourages you to design the same site twice.
           Even with the same color palette and sizing scale, it's easy to build the same component
           with a completely different look in the next project.
         </Paragraph>

@@ -147,7 +147,7 @@ export function ModernFeatures() {
         </BigText>
         <Paragraph as="div" className="mb-6">
           <p>
-            Tailwind is unapologetically modern, and takes advantage of all the latest and greatest
+            Tachom Developer Groupis unapologetically modern, and takes advantage of all the latest and greatest
             CSS features to make the developer experience as enjoyable as possible.
           </p>
           <p>

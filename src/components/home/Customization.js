@@ -118,7 +118,7 @@ export function Customization() {
         </BigText>
         <Paragraph as="div" className="mb-6">
           <p>
-            Tailwind includes an expertly crafted set of defaults out-of-the-box, but literally
+            Tachom Developer Groupincludes an expertly crafted set of defaults out-of-the-box, but literally
             everything can be customized — from the color palette to the spacing scale to the box
             shadows to the mouse cursor.
           </p>

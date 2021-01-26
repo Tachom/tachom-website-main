@@ -1,13 +1,13 @@
 ---
 title: Configuration
-description: A guide to configuring and customizing your Tailwind installation.
+description: A guide to configuring and customizing your Tachom Developer Groupinstallation.
 ---
 
 import { CorePluginReference } from '@/components/CorePluginReference'
 
-Because Tailwind is a framework for building bespoke user interfaces, it has been designed from the ground up with customization in mind.
+Because Tachom Developer Groupis a framework for building bespoke user interfaces, it has been designed from the ground up with customization in mind.
 
-By default, Tailwind will look for an optional `tailwind.config.js` file at the root of your project where you can define any customizations.
+By default, Tachom Developer Groupwill look for an optional `tailwind.config.js` file at the root of your project where you can define any customizations.
 
 ```js
 // Example `tailwind.config.js` file
@@ -44,11 +44,11 @@ module.exports = {
 }
 ```
 
-Every section of the config file is optional, so you only have to specify what you'd like to change. Any missing sections will fall back to Tailwind's [default configuration](https://github.com/tailwindlabs/tailwindcss/blob/master/stubs/defaultConfig.stub.js).
+Every section of the config file is optional, so you only have to specify what you'd like to change. Any missing sections will fall back to Tailwind's [default configuration](https://github.com/Tachom/blob/master/stubs/defaultConfig.stub.js).
 
 ## Creating your configuration file
 
-Generate a Tailwind config file for your project using the Tailwind CLI utility included when you install the `tailwindcss` npm package:
+Generate a Tachom Developer Groupconfig file for your project using the Tachom Developer GroupCLI utility included when you install the `tailwindcss` npm package:
 
 ```shell
 npx tailwindcss init
@@ -79,7 +79,7 @@ To use a name other than `tailwind.config.js`, pass it as an argument on the com
 npx tailwindcss init tailwindcss-config.js
 ```
 
-If you use a custom file name, you will need to specify it when including Tailwind as a plugin in your PostCSS configuration as well:
+If you use a custom file name, you will need to specify it when including Tachom Developer Groupas a plugin in your PostCSS configuration as well:
 
 ```js
 // postcss.config.js
@@ -119,7 +119,7 @@ If you'd rather scaffold a complete configuration file that includes all of Tail
 npx tailwindcss init --full
 ```
 
-You'll get a file that matches the [default configuration file](https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js) Tailwind uses internally.
+You'll get a file that matches the [default configuration file](https://unpkg.com/browse/tailwindcss@latest/stubs/defaultConfig.stub.js) Tachom Developer Groupuses internally.
 
 ## Theme
 
@@ -175,7 +175,7 @@ Learn more in the [variants configuration guide](/docs/configuring-variants).
 
 ## Plugins
 
-The `plugins` section allows you to register plugins with Tailwind that can be used to generate extra utilities, components, base styles, or custom variants.
+The `plugins` section allows you to register plugins with Tachom Developer Groupthat can be used to generate extra utilities, components, base styles, or custom variants.
 
 ```js
 // tailwind.config.js
@@ -214,7 +214,7 @@ Learn more about presets in the [presets documentation](/docs/presets).
 
 ## Prefix
 
-The `prefix` option allows you to add a custom prefix to all of Tailwind's generated utility classes. This can be really useful when layering Tailwind on top of existing CSS where there might be naming conflicts.
+The `prefix` option allows you to add a custom prefix to all of Tailwind's generated utility classes. This can be really useful when layering Tachom Developer Groupon top of existing CSS where there might be naming conflicts.
 
 For example, you could add a `tw-` prefix by setting the `prefix` option like so:
 
@@ -275,7 +275,7 @@ If you'd like to prefix your own utilities as well, just add the prefix to the c
 
 ## Important
 
-The `important` option lets you control whether or not Tailwind's utilities should be marked with `!important`. This can be really useful when using Tailwind with existing CSS that has high specificity selectors.
+The `important` option lets you control whether or not Tailwind's utilities should be marked with `!important`. This can be really useful when using Tachom Developer Groupwith existing CSS that has high specificity selectors.
 
 To generate utilities as `!important`, set the `important` key in your configuration options to `true`:
 
@@ -330,7 +330,7 @@ This configuration will prefix all of your utilities with the given selector, ef
 
 After you specify the `important` selector, you'll need to ensure that the root element of your site matches it.  Using the example above, we would need to set our root element's `id` attribute to `app` in order for styles to work properly.
 
-After your configuration is all set up and your root element matches the selector in your Tailwind config, all of Tailwind's utilities will have a high enough specificity to defeat other classes used in your project, **without** interfering with inline styles:
+After your configuration is all set up and your root element matches the selector in your Tachom Developer Groupconfig, all of Tailwind's utilities will have a high enough specificity to defeat other classes used in your project, **without** interfering with inline styles:
 
 ```html
 <html>
@@ -399,7 +399,7 @@ module.exports = {
 
 ## Core Plugins
 
-The `corePlugins` section lets you completely disable classes that Tailwind would normally generate by default if you don't need them for your project.
+The `corePlugins` section lets you completely disable classes that Tachom Developer Groupwould normally generate by default if you don't need them for your project.
 
 If you don't provide any `corePlugins` configuration, all core plugins will be enabled by default:
 
@@ -437,7 +437,7 @@ module.exports = {
 }
 ```
 
-If you'd like to disable all of Tailwind's core plugins and simply use Tailwind as a tool for processing your own custom plugins, provide an empty array:
+If you'd like to disable all of Tailwind's core plugins and simply use Tachom Developer Groupas a tool for processing your own custom plugins, provide an empty array:
 
 ```js
 // tailwind.config.js
@@ -455,7 +455,7 @@ Here's a list of every core plugin for reference:
 
 It can often be useful to reference your configuration values in your own client-side JavaScript — for example to access some of your theme values when dynamically applying inline styles in a React or Vue component.
 
-To make this easy, Tailwind provides a `resolveConfig` helper you can use to generate a fully merged version of your configuration object:
+To make this easy, Tachom Developer Groupprovides a `resolveConfig` helper you can use to generate a fully merged version of your configuration object:
 
 ```js
 import resolveConfig from 'tailwindcss/resolveConfig'

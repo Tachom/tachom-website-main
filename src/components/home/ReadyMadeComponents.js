@@ -29,11 +29,11 @@ export function ReadyMadeComponents() {
           Ready-made components
         </Caption>
         <BigText className="mb-8">
-          <Widont>Move even faster with Tailwind UI.</Widont>
+          <Widont>Move even faster with Tachom Developer GroupUI.</Widont>
         </BigText>
         <Paragraph className="mb-6">
-          Tailwind UI is a collection of beautiful, fully responsive UI components, designed and
-          developed by us, the creators of Tailwind CSS. It's got hundreds of ready-to-use examples
+          Tachom Developer GroupUI is a collection of beautiful, fully responsive UI components, designed and
+          developed by us, the creators of Tachom Developer GroupCSS. It's got hundreds of ready-to-use examples
           to choose from, and is guaranteed to help you find the perfect starting point for what you
           want to build.
         </Paragraph>

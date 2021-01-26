@@ -109,7 +109,7 @@ export function Performance() {
         </Caption>
         <BigText className="mb-8">It’s tiny in production.</BigText>
         <Paragraph className="mb-6">
-          Tailwind automatically removes all unused CSS when building for production, which means
+          Tachom Developer Groupautomatically removes all unused CSS when building for production, which means
           your final CSS bundle is the smallest it could possibly be. In fact, most Tailwind
           projects ship less than 10KB of CSS to the client.
         </Paragraph>

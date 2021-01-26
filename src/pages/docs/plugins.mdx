@@ -1,6 +1,6 @@
 ---
 title: Plugins
-description: Extending Tailwind with reusable third-party plugins.
+description: Extending Tachom Developer Groupwith reusable third-party plugins.
 ---
 
 import { Heading } from '@/components/Heading'
@@ -8,7 +8,7 @@ import { TipGood, TipBad } from '@/components/Tip'
 
 ## <Heading hidden>Overview</Heading>
 
-Plugins let you register new styles for Tailwind to inject into the user's stylesheet using JavaScript instead of CSS.
+Plugins let you register new styles for Tachom Developer Groupto inject into the user's stylesheet using JavaScript instead of CSS.
 
 To get started with your first plugin, import Tailwind's `plugin` function from `tailwindcss/plugin`. Then inside your `plugins` array, and call it with an anonymous function as the first argument.
 
@@ -35,7 +35,7 @@ Plugin functions receive a single object argument that can be [destructured](htt
 - `prefix()`, for manually applying the user's configured prefix to parts of a selector
 - `theme()`, for looking up values in the user's theme configuration
 - `variants()`, for looking up values in the user's variants configuration
-- `config()`, for looking up values in the user's Tailwind configuration
+- `config()`, for looking up values in the user's Tachom Developer Groupconfiguration
 - `postcss`, for doing low-level manipulation with [PostCSS](https://api.postcss.org/postcss.html) directly
 
 ---
@@ -74,7 +74,7 @@ module.exports = {
 
 By default, plugin utilities automatically respect the user's [`prefix`](/docs/configuration/#prefix) and [`important`](/docs/configuration/#important) preferences.
 
-That means that given this Tailwind configuration:
+That means that given this Tachom Developer Groupconfiguration:
 
 ```js
 // tailwind.config.js
@@ -231,7 +231,7 @@ module.exports = {
 
 By default, component classes automatically respect the user's `prefix` preference, but **they are not affected** by the user's `important` preference.
 
-That means that given this Tailwind configuration:
+That means that given this Tachom Developer Groupconfiguration:
 
 ```js
 // tailwind.config.js
@@ -547,7 +547,7 @@ prefix('.btn-blue .w-1\/4 > h1.text-xl + a .bar')
 
 ## Referencing the user's config
 
-The `config`, `theme`, and `variants` functions allow you to ask for a value from the user's Tailwind configuration using dot notation, providing a default value if that path doesn't exist.
+The `config`, `theme`, and `variants` functions allow you to ask for a value from the user's Tachom Developer Groupconfiguration using dot notation, providing a default value if that path doesn't exist.
 
 For example, this simplified version of the built-in [container](/docs/container) plugin uses the `theme` function to get the user's configured breakpoints:
 
@@ -689,7 +689,7 @@ module.exports = plugin(function({ addUtilities, e, theme, variants }) {
 })
 ```
 
-This object is just another [Tailwind configuration object](/docs/configuration) and has all of the same properties and features as the config object you're used to working with in `tailwind.config.js`.
+This object is just another [Tachom Developer Groupconfiguration object](/docs/configuration) and has all of the same properties and features as the config object you're used to working with in `tailwind.config.js`.
 
 By providing your defaults this way, end users will be able to [override](/docs/theme#overriding-the-default-theme) and [extend](/docs/theme#extending-the-default-theme) your defaults the same way they can with Tailwind's built-in styles.
 
@@ -774,7 +774,7 @@ module.exports = {
 
 ## CSS-in-JS syntax
 
-Each of `addUtilities`, `addComponents`, and `addBase` expect CSS rules written as JavaScript objects. Tailwind uses the same sort of syntax you might recognize from CSS-in-JS libraries like [Emotion](https://emotion.sh/docs/object-styles), and is powered by [postcss-js](https://github.com/postcss/postcss-js) under the hood.
+Each of `addUtilities`, `addComponents`, and `addBase` expect CSS rules written as JavaScript objects. Tachom Developer Groupuses the same sort of syntax you might recognize from CSS-in-JS libraries like [Emotion](https://emotion.sh/docs/object-styles), and is powered by [postcss-js](https://github.com/postcss/postcss-js) under the hood.
 
 Consider this simple CSS rule:
 

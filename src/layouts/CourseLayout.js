@@ -78,7 +78,7 @@ export function CourseLayout(props) {
 
   return (
     <>
-      <Title suffix={router.pathname === '/course' ? undefined : 'Designing with Tailwind CSS'}>
+      <Title suffix={router.pathname === '/course' ? undefined : 'Designing with Tachom Developer GroupCSS'}>
         {props.layoutProps.meta.metaTitle || props.layoutProps.meta.title}
       </Title>
       <Head>
