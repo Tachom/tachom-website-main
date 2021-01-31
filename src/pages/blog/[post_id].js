@@ -78,7 +78,7 @@ export default function Article({ data, preview }) {
   const {article} = data;
 
   return (
-    <div className="px-4 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
+    <div className="px-4 mt-20 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20 relative max-w-screen-md xl:max-w-screen-md mx-auto">
       <Head>
         <title>{article.title}</title>
       </Head>

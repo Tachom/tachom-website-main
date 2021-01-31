@@ -1,11 +1,6 @@
 import { IconContainer, Caption, BigText, Paragraph, Link, Widont } from '@/components/home/common'
 import { gradients } from '@/utils/gradients'
 import { ReactComponent as Icon } from '@/img/icons/home/constraint-based.svg'
-import { ReactComponent as RefactoringUi } from '@/img/resources/refactoring-ui.svg'
-import { ReactComponent as TailwindUi } from '@/img/resources/tailwind-ui.svg'
-import { ReactComponent as HeadlessUi } from '@/img/resources/headless-ui.svg'
-import { ReactComponent as Heroicons } from '@/img/resources/heroicons.svg'
-import { ReactComponent as Heropatterns } from '@/img/resources/heropatterns.svg'
 
 function Logo({ title, component: Component }) {
   return (
@@ -82,12 +77,12 @@ export function Services() {
       </div>
       <div className="grid sm:grid-cols-3 gap-8 sm:gap-6 xl:gap-8 py-10 ">
         <section>
-            <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+            <div className="p-2 md:p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
               <Link className="w-full relative" href="/services/mobile">
-                <div className="w-36 md:w-48 mt-2">
+                <div className="w-32 md:w-48 mt-2">
                   <img 
                     src="https://devimages-cdn.apple.com/wwdc-services/articles/images/65934949-67DA-47BB-A590-E5C84FA26FB8/256.png"
-                    className="w-36 md:w-48"
+                    className="w-32 md:w-48"
                     />
                 </div>
                 <div className="w-auto my-4">
@@ -102,14 +97,14 @@ export function Services() {
             </div>
         </section>
         <section>
-          <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+          <div className="p-2 md:p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
             <Link
               className="w-full relative"
               href="/services/digital">
-              <div className="w-36 md:w-48">
+              <div className="w-32 md:w-48">
                 <img 
                   src="https://devimages-cdn.apple.com/wwdc-services/articles/images/96092488-E883-4776-85A2-CFB20AB2F730/256.png"
-                  className="w-36 md:w-48"
+                  className="w-32 md:w-48"
                   />
               </div>
               
@@ -126,12 +121,12 @@ export function Services() {
           
         </section>
         <section>
-        <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+        <div className="p-2 md:p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
             <Link href="/services/data" className="w-full relative">
-              <div className="w-36 md:w-48 mt-2">
+              <div className="w-32 md:w-48 mt-2">
                 <img 
                   src="https://devimages-cdn.apple.com/wwdc-services/articles/images/CB3E431C-C0C6-4AE2-9967-31C0476829DA/256.png"
-                  className="w-36 md:w-48"
+                  className="w-32 md:w-48"
                   />
               </div>
               <div className="w-auto my-4">

@@ -1,26 +1,34 @@
 import Link from 'next/link'
+import { ReactComponent as TachomLogo } from '@/img/brand/tachom-logo.svg'
+
+function Logo({ title, component: Component }) {
+  return (
+    <div className="w-20 md:w-32 max-w-full">
+      <div className="relative" style={{ paddingTop: `${(60 / 240) * 100}%` }}>
+        <span className="sr-only">{title}</span>
+        <Component className="absolute inset-0 w-full h-full" />
+      </div>
+    </div>
+  )
+}
 
 export function Header({ navIsOpen, onNavToggle }) {
   return (
     <>
-      <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 py-4 flex items-center justify-end mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0 sm:px-0">
+      <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 py-4 flex items-center justify-between mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0 sm:px-0">
+            <div className="space-x-4 flex text-gray-800">
+              <Link href="/">
+                <a className="flex">
+                  <Logo title="Tachom" component={TachomLogo} />
+                  <p className="hidden lg:flex text-gray-800 font-bold">Tachom Developer Group</p>
+                </a>
+              </Link>
+            </div>
             <div className="flex items-center space-x-6 sm:space-x-10 ml-6 sm:ml-10 px-4">
               <Link href="/blog" target="_blank">
                 <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
                   <span className="sm:hidden">Blog</span>
                   <span className="hidden sm:inline">Blog</span>
-                </a>
-              </Link>
-              <Link href="/services">
-                <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
-                  <span className="sm:hidden">Services</span>
-                  <span className="hidden sm:inline">Services</span>
-                </a>
-              </Link>
-              <Link href="/hire">
-                <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
-                  <span className="sm:hidden">Hire</span>
-                  <span className="hidden sm:inline">Hire</span>
                 </a>
               </Link>
               <a
@@ -40,3 +48,19 @@ export function Header({ navIsOpen, onNavToggle }) {
     </>
   )
 }
+
+/*
+<Link href="/services">
+                <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
+                  <span className="sm:hidden">Services</span>
+                  <span className="hidden sm:inline">Services</span>
+                </a>
+              </Link>
+              <Link href="/hire">
+                <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
+                  <span className="sm:hidden">Hire</span>
+                  <span className="hidden sm:inline">Hire</span>
+                </a>
+              </Link>
+
+*/
