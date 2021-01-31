@@ -30,7 +30,7 @@ export default function Home() {
         <div className="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">0
           <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 py-4 flex items-center justify-end mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0 sm:px-0">
             <div className="flex items-center space-x-6 sm:space-x-10 ml-6 sm:ml-10 px-4">
-              <NextLink href="/blog">
+              <NextLink href="https://tachom.medium.com" target="_blank">
                 <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
                   <span className="sm:hidden">Blog</span>
                   <span className="hidden sm:inline">Blog</span>

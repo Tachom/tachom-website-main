@@ -80,13 +80,13 @@ export function Labs() {
             <div className="w-full relative text-white overflow-hidden rounded-3xl flex shadow-lg">
               <div className={`w-full flex md:flex-col bg-gradient-to-br ${gradients.amber[0]}`}>
                 <div className="sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
-                  <h2 className="text-xl font-semibold mb-2 text-shadow">Watch the screencasts</h2>
+                  <h2 className="text-xl font-semibold mb-2 text-shadow">We share knowledge</h2>
                   <p className="font-medium text-amber-100 text-shadow mb-4">
                     Learn more about Tachom Developer Groupdirectly from the team on our channel.
                   </p>
                   <Link href="https://www.youtube.com/tailwindlabs">
                     <a className="mt-auto bg-amber-900 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold py-2 px-4 inline-flex">
-                      Start watching
+                      Start learning
                     </a>
                   </Link>
                 </div>

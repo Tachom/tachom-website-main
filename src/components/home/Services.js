@@ -34,13 +34,12 @@ export function Services() {
           <Widont>Things we do for Disruptive Brands.</Widont>
         </BigText>
         <Paragraph className="mb-6">
-          Utility classes help you work within the constraints of a system instead of littering your
-          stylesheets with arbitrary values. They make it easy to be consistent with color choices,
-          spacing, typography, shadows, and everything else that makes up a well-engineered design
-          system.
+          Our team of designers, strategists, thinkers and doers are here to help you and your 
+          teams navigate through these uncertain times. Our approaches might have changed, but 
+          our outcomes remain the same.
         </Paragraph>
         <Link href="/docs/utility-first" className="text-purple-600 hover:text-purple-800">
-          Learn more -&gt;
+          See how we can help -&gt;
         </Link>
         <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-8 my-8 sm:my-12">
         <section>
