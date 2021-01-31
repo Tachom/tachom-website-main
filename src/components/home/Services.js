@@ -37,121 +37,114 @@ export function Services() {
           Our team of designers, strategists, thinkers and doers are here to help you and your 
           teams navigate through these uncertain times. Our approaches might have changed, but 
           our outcomes remain the same.
+
+
         </Paragraph>
-        <Link href="/docs/utility-first" className="text-purple-600 hover:text-purple-800">
-          See how we can help -&gt;
-        </Link>
         <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-8 my-8 sm:my-12">
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">Learn UI Design</h2>
+          <h2 className="text-xl text-gray-900 font-bold mb-4">Custom Enterprise Software</h2>
           <a
-            href="https://refactoringui.com/book"
-            className="h-40 sm:h-56 xl:h-64 bg-gray-900 bg-cover rounded-3xl mb-6 flex items-center justify-center"
+            href="/services/enterprise"
+            className="h-40 sm:h-56 xl:h-64 bg-gray-50 bg-cover rounded-3xl mb-6 flex items-center justify-center"
             style={{
-              backgroundImage: `url(${require('@/img/resources/refactoring-ui-bg.png').default})`,
+              backgroundImage: `url("https://deepsource.io/images/logos/analyzers/desktop-logos.svg")`,
             }}
           >
-            <Logo title="Refactoring UI" component={RefactoringUi} />
           </a>
           <div className="space-y-5">
             <p>
-              Refactoring UI is a design-for-developers book + video series put together by Adam
-              Wathan and Steve Schoger. It covers literally everything we know about making things
-              look awesome.
-            </p>
-            <p>
-              Almost 10,000 people have picked it up so far and have all sorts of awesome things to
-              say about how it helped them improve their work.
+              We design and develop high performance software and design systems according to your specifications.
             </p>
           </div>
         </section>
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">Official Tachom Developer Group  Components</h2>
+          <h2 className="text-xl text-gray-900 font-bold mb-4">Website Development</h2>
           <a
-            href="https://tailwindui.com/"
-            className="h-40 sm:h-56 xl:h-64 bg-gray-300 rounded-3xl mb-6 overflow-hidden flex"
+            href="/services/web"
+            className="h-40 sm:h-56 xl:h-64 bg-gray-100 rounded-3xl mb-6 overflow-hidden flex"
           >
-            <div className="relative flex-none flex items-center justify-center px-6 xl:px-10">
-              <div className="bg-gray-900 absolute inset-0 -left-64 transform -skew-x-20" />
-              <Logo title="Tachom Developer GroupUI" component={TailwindUi} />
+            <div className="w-1/3 relative flex-none flex items-center justify-center px-6 xl:px-10">
+              <div className="absolute inset-0 -left-64 transform -skew-x-20" />
             </div>
             <div
               className="flex-auto bg-cover -ml-12"
               style={{
-                backgroundImage: `url(${require('@/img/resources/tailwind-ui.jpg').default})`,
+                backgroundImage: `url("https://github.githubassets.com/images/modules/site/open-source-ill-watch.png?sn1")`,
               }}
             />
           </a>
           <div className="space-y-5">
             <p>
-              Tachom Developer GroupUI is a collection of professionally designed, pre-built, fully responsive
-              HTML snippets you can drop into your Tachom Developer Groupprojects.
-            </p>
-            <p>
-              There are currently over 350 components available in two different categories
-              (Marketing and Application UI) and we’re always adding more.
+              Secure, beautiful and accessible websites using industries best practices.
             </p>
           </div>
         </section>
       </div>
-      <div className="grid sm:grid-cols-3 gap-8 sm:gap-6 xl:gap-8 pb-10 border-b border-gray-200">
+      <div className="grid sm:grid-cols-3 gap-8 sm:gap-6 xl:gap-8 py-10 ">
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">
-            JavaScript<span className="sr-only">: Headless UI</span>
-          </h2>
-          <a
-            href="https://headlessui.dev/"
-            className="h-40 xl:h-48 rounded-3xl bg-gray-900 mb-6 flex items-center justify-center p-6"
-          >
-            <Logo title="Headless UI" component={HeadlessUi} />
-          </a>
-          <p>
-            Completely unstyled, fully accessible UI components, designed to integrate beautifully
-            with Tachom Developer Group .
-          </p>
+            <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+              <Link className="w-full relative" href="/services/mobile">
+                <div className="w-36 md:w-48 mt-2">
+                  <img 
+                    src="https://devimages-cdn.apple.com/wwdc-services/articles/images/65934949-67DA-47BB-A590-E5C84FA26FB8/256.png"
+                    className="w-36 md:w-48"
+                    />
+                </div>
+                <div className="w-auto my-4">
+                  <h2 className="text-xl text-gray-900 font-bold">
+                    Mobile Application Development
+                  </h2>
+                  <p className="text-sm">
+                    Cross platform native and hybrid mobile apps with for Android & iOS.
+                  </p>
+                </div>
+              </Link>
+            </div>
         </section>
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">
-            Icons<span className="sr-only">: Heroicons</span>
-          </h2>
-          <a
-            href="https://heroicons.com/"
-            className="relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-violet-600 to-purple-500 mb-6"
-          >
-            <div
-              className="absolute inset-0 flex items-center justify-center p-6 bg-contain"
-              style={{
-                backgroundImage: `url(${require('@/img/resources/heroicons-bg.svg').default})`,
-              }}
-            >
-              <Logo title="Heroicons" component={Heroicons} />
-            </div>
-          </a>
-          <p>
-            A set of free MIT-licensed high-quality SVG icons for you to use in your web projects.
-          </p>
+          <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+            <Link
+              className="w-full relative"
+              href="/services/digital">
+              <div className="w-36 md:w-48">
+                <img 
+                  src="https://devimages-cdn.apple.com/wwdc-services/articles/images/96092488-E883-4776-85A2-CFB20AB2F730/256.png"
+                  className="w-36 md:w-48"
+                  />
+              </div>
+              
+              <div className="w-auto mt-4">
+                <h2 className="text-xl text-gray-900 font-bold">
+                  Digital Product Design
+                </h2>
+                <p className="text-sm">
+                  Wireframing, prototyping and design systems.
+                </p>
+              </div>
+            </Link>
+          </div>
+          
         </section>
         <section>
-          <h2 className="text-xl text-gray-900 font-bold mb-4">
-            Patterns<span className="sr-only">: Heropatterns</span>
-          </h2>
-          <a
-            href="https://www.heropatterns.com/"
-            className="relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-cyan-600 to-teal-500 mb-6"
-          >
-            <div
-              className="absolute inset-0 flex items-center justify-center p-6 bg-cover"
-              style={{
-                backgroundImage: `url(${require('@/img/resources/heropatterns-bg.svg').default})`,
-              }}
-            >
-              <Logo title="Heropatterns" component={Heropatterns} />
-            </div>
-          </a>
-          <p>
-            A set of free MIT-licensed high-quality SVG patterns for you to use in your web
-            projects.
-          </p>
+        <div className="p-4 space-x-4 relative flex h-40 xl:h-48 rounded-3xl bg-gradient-to-br from-gray-100 to-gray-50 mb-6">
+            <Link href="/services/data" className="w-full relative">
+              <div className="w-36 md:w-48 mt-2">
+                <img 
+                  src="https://devimages-cdn.apple.com/wwdc-services/articles/images/CB3E431C-C0C6-4AE2-9967-31C0476829DA/256.png"
+                  className="w-36 md:w-48"
+                  />
+              </div>
+              <div className="w-auto my-4">
+                <h2 className="text-xl text-gray-900 font-bold">
+                  Data Science & Machine Learning
+                </h2>
+                <p className="text-sm">
+                  Intelligent systems, data mining, chat-bots and data driven solutions.
+                </p>
+              </div>
+            </Link>
+          </div>
+          
         </section>
       </div>
       </div>

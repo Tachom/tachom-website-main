@@ -1,11 +1,11 @@
 import { Services } from '@/components/home/Services'
 import { BuildAnything } from '@/components/home/BuildAnything'
-import { Labs } from '@/components/home/Labs'
 import { Blog } from '@/components/home/Blog'
 import { BigText, InlineCode, Link, Paragraph, Widont } from '@/components/home/common'
 import { Footer } from '@/components/home/Footer'
 import NextLink from 'next/link'
 import Head from 'next/head'
+import { Logo } from '@/components/Logo'
 
 export default function Home() {
   
@@ -30,19 +30,19 @@ export default function Home() {
         <div className="px-4 sm:px-6 md:px-8 mb-14 sm:mb-20 xl:mb-8">0
           <div className="fixed top-0 left-0 w-full z-50 bg-white border-b border-gray-200 py-4 flex items-center justify-end mb-16 sm:mb-20 -mx-4 px-4 sm:mx-0 sm:px-0">
             <div className="flex items-center space-x-6 sm:space-x-10 ml-6 sm:ml-10 px-4">
-              <NextLink href="https://tachom.medium.com" target="_blank">
+              <NextLink href="/blog" target="_blank">
                 <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
                   <span className="sm:hidden">Blog</span>
                   <span className="hidden sm:inline">Blog</span>
                 </a>
               </NextLink>
-              <NextLink href="/careers">
+              <NextLink href="/services">
                 <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
-                  <span className="sm:hidden">Careers</span>
-                  <span className="hidden sm:inline">Careers</span>
+                  <span className="sm:hidden">Services</span>
+                  <span className="hidden sm:inline">Services</span>
                 </a>
               </NextLink>
-              <NextLink href="/blog">
+              <NextLink href="/hire">
                 <a className="text-base leading-6 font-medium hover:text-gray-600 transition-colors duration-200 py-2">
                   <span className="sm:hidden">Hire</span>
                   <span className="hidden sm:inline">Hire</span>
@@ -63,7 +63,12 @@ export default function Home() {
           </div>
 
           <div className="pt-16 typewriter">
-            <h1 className="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mt-10 mb-8 sm:mt-14 sm:mb-10">
+            
+            <div className="my-4">
+              <Logo />
+            </div>
+
+            <h1 className="text-4xl mt-8 sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight text-gray-900 mb-8 sm:mb-10">
               We design and build highly scalable software solutions.
             </h1>
             <p className="max-w-screen-lg text-lg sm:text-2xl sm:leading-10 font-medium mb-10 sm:mb-11">
@@ -121,11 +126,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <div className="max-w-screen-lg xl:max-w-screen-xl mx-auto space-y-20 sm:space-y-32 md:space-y-40 lg:space-y-44">
         <Services />
         <BuildAnything />
-        <Labs />
         <Blog />
       </div>
 

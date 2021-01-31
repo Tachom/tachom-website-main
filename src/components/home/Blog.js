@@ -28,7 +28,7 @@ export function Blog() {
           Our team also loves to write.
         </BigText>
         <section className="mb-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
             {posts.map((post, key) => <BlogPost key={key} {...post} />)}
           </div>
         </section>
@@ -44,7 +44,7 @@ const BlogPost = ({title, author, link, pubDate, thumbnail}) => {
   return (
     <div className="space-y-4">
       <Link href={link}>
-          <div className="space-y-2 flex md:p-0 space-x-2">
+          <div className="space-y-2 flex justify-between w-full md:p-0 space-x-2">
             <div className="">
               <div className="text-sm">
                 <p>
@@ -52,7 +52,7 @@ const BlogPost = ({title, author, link, pubDate, thumbnail}) => {
                 </p>
               </div>
               <div className="">
-                <h3 className="font-bold text-gray-800">{title}</h3>
+                <p className="text-lg font-bold text-gray-800">{title}</p>
               </div>
             </div>
           

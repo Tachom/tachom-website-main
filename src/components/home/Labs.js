@@ -1,7 +1,6 @@
 import { IconContainer, Caption, BigText, Paragraph } from '@/components/home/common'
 import { gradients } from '@/utils/gradients'
 import { ReactComponent as Icon } from '@/img/icons/home/performance.svg'
-import styles from '../../pages/docs/index.module.css'
 import { ReactComponent as ScreencastsImage } from '@/img/screencasts.svg'
 import { ReactComponent as GuidesImage } from '@/img/guides.svg'
 import { ReactComponent as PlayImage } from '@/img/play.svg'
@@ -10,6 +9,7 @@ import { Widont } from '@/components/Widont'
 import { ReactComponent as TuiBundleLogo } from '@/img/tailwind-ui-bundle-logo.svg'
 import { ReactComponent as RefactoringUiCompleteLogo } from '@/img/refactoring-ui-complete-logo.svg'
 import Link from 'next/link'
+
 export function Labs() {
 
   return (
@@ -82,7 +82,7 @@ export function Labs() {
                 <div className="sm:max-w-sm sm:flex-none md:w-auto md:flex-auto flex flex-col items-start relative z-10 p-6 xl:p-8">
                   <h2 className="text-xl font-semibold mb-2 text-shadow">We share knowledge</h2>
                   <p className="font-medium text-amber-100 text-shadow mb-4">
-                    Learn more about Tachom Developer Groupdirectly from the team on our channel.
+                    Learn new skills and advance your career with online courses created by industry experts.
                   </p>
                   <Link href="https://www.youtube.com/tailwindlabs">
                     <a className="mt-auto bg-amber-900 bg-opacity-50 hover:bg-opacity-75 transition-colors duration-200 rounded-xl font-semibold py-2 px-4 inline-flex">
