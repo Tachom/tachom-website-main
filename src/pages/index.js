@@ -75,11 +75,6 @@ export default function Home({data}) {
                   want to help amazing tech startups get from zero to one and create
                   beautiful things that make life better.
                 </p>
-                <p>
-                  <Link href="/docs/utility-first" className="text-gray-700 hover:text-gray-800 font-medium shadow-link">
-                    Get to know us -&gt;
-                  </Link>
-                </p>
             </figure>
             <figure className="max-w-4xl mb-6 lg:w-1/2 lg:px-4 space-y-4">
                 <p>
