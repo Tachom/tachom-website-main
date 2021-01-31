@@ -56,7 +56,7 @@ export default function App({ Component, pageProps, router }) {
     : {}
   const meta = Component.layoutProps?.meta || {}
   const description =
-    meta.metaDescription || meta.description || 'Documentation for the Tachom Developer Group  framework.'
+    meta.metaDescription || meta.description || 'The official website for the Tachom Developer Group.'
 
   if (router.pathname.startsWith('/examples/')) {
     return <Component {...pageProps} />
@@ -67,26 +67,16 @@ export default function App({ Component, pageProps, router }) {
       <Title suffix="Tachom Developer Group ">{meta.metaTitle || meta.title}</Title>
       <Head>
         <meta key="twitter:card" name="twitter:card" content="summary_large_image" />
-        <meta key="twitter:site" name="twitter:site" content="@tailwindcss" />
+        <meta key="twitter:site" name="twitter:site" content="@tachom" />
         <meta key="twitter:description" name="twitter:description" content={description} />
-        <meta
-          key="twitter:image"
-          name="twitter:image"
-          content={`https://tailwindcss.com${twitterLargeCard}`}
-        />
-        <meta key="twitter:creator" name="twitter:creator" content="@tailwindcss" />
+        <meta key="twitter:creator" name="twitter:creator" content="@tahom" />
         <meta
           key="og:url"
           property="og:url"
-          content={`https://tailwindcss.com${router.pathname}`}
+          content={`https://tachom.co.zw${router.pathname}`}
         />
         <meta key="og:type" property="og:type" content="article" />
         <meta key="og:description" property="og:description" content={description} />
-        <meta
-          key="og:image"
-          property="og:image"
-          content={`https://tailwindcss.com${twitterLargeCard}`}
-        />
       </Head>
       {router.pathname !== '/' && (
         <Header navIsOpen={navIsOpen} onNavToggle={(isOpen) => setNavIsOpen(isOpen)} />

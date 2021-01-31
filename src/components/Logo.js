@@ -5,7 +5,7 @@ export function Logo(props) {
       xmlnsXlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 154 55"
       {...props}
-      className="max-w-48 w-48"
+      className={`max-w-48 w-48 ${props.className}`}
     >
       <title>{"Clearleft"}</title>
       <text

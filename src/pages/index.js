@@ -6,8 +6,9 @@ import { Footer } from '@/components/home/Footer'
 import NextLink from 'next/link'
 import Head from 'next/head'
 import { Logo } from '@/components/Logo'
+import { request } from 'src/lib/dato'
 
-export default function Home() {
+export default function Home({data}) {
   
 
   return (
@@ -129,10 +130,69 @@ export default function Home() {
       <div className="max-w-screen-lg xl:max-w-screen-xl mx-auto space-y-20 sm:space-y-32 md:space-y-40 lg:space-y-44">
         <Services />
         <BuildAnything />
-        <Blog />
+        <Blog posts={data.allArticles} />
       </div>
 
       <Footer />
     </div>
   )
+}
+
+const BLOG_POSTS_QUERY = `query HomePage($limit: IntType) {
+  allArticles(first: $limit) {
+      id
+      title
+      subtitle
+      body
+      category {
+        id
+        name
+      }
+      author {
+        id
+        name
+        profilePicture{
+          id
+          responsiveImage(imgixParams: { fit: crop, w: 100, h: 100, auto: format }) {
+            srcSet
+            webpSrcSet
+            sizes
+            src
+            width
+            height
+            aspectRatio
+            alt
+            title
+            base64
+          }  
+        }
+      }
+      thumbnail {
+        id
+        responsiveImage(imgixParams: { fit: crop, w: 300, h: 300, auto: format }) {
+          srcSet
+          webpSrcSet
+          sizes
+          src
+          width
+          height
+          aspectRatio
+          alt
+          title
+          base64
+        }
+      }
+  }
+}`;
+
+
+export async function getStaticProps(context) {
+  const data = await request({
+      query: BLOG_POSTS_QUERY,
+      variables: { limit: 4 },
+      preview: context.preview 
+    });
+    return {
+      props: { data }
+    };
 }
