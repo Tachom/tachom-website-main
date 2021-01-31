@@ -22,7 +22,7 @@ export function Blog({posts}) {
             {posts.map((post, key) => <BlogPost key={key} {...post} />)}
           </div>
         </section>
-        <Link href="/docs/responsive-design" className="text-violet-600 hover:text-violet-800 shadow-link">
+        <Link href="/blog" className="text-violet-600 hover:text-violet-800 shadow-link">
           Read more -&gt;
         </Link>
       </div>
