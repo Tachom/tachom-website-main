@@ -18,7 +18,7 @@ const rotation = [-2, 1, -1, 2, -1, 1]
 
 const testimonials = [
   {
-    content: 'I feel like an idiot for not using Tachom Developer GroupCSS until now.',
+    content: 'I feel like an idiot for not using Tachom Developer Group  until now.',
     tweetUrl: 'https://twitter.com/ryanflorence/status/1187951799442886656',
     author: {
       name: 'Ryan Florence',
@@ -28,7 +28,7 @@ const testimonials = [
   },
   {
     content:
-      'If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tachom Developer GroupCSS.',
+      'If I had to recommend a way of getting into programming today, it would be HTML + CSS with Tachom Developer Group .',
     tweetUrl: 'https://twitter.com/rauchg/status/1225611926320738304',
     author: {
       name: 'Guillermo Rauch',

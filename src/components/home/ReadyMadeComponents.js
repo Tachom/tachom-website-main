@@ -33,7 +33,7 @@ export function ReadyMadeComponents() {
         </BigText>
         <Paragraph className="mb-6">
           Tachom Developer GroupUI is a collection of beautiful, fully responsive UI components, designed and
-          developed by us, the creators of Tachom Developer GroupCSS. It's got hundreds of ready-to-use examples
+          developed by us, the creators of Tachom Developer Group . It's got hundreds of ready-to-use examples
           to choose from, and is guaranteed to help you find the perfect starting point for what you
           want to build.
         </Paragraph>

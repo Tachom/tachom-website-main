@@ -1,6 +1,6 @@
-import { Community } from '@/components/Community'
-import { DocumentationLayout } from '@/layouts/DocumentationLayout'
-import Link from 'next/link'
+import { IconContainer, Caption, BigText, Paragraph, Link, Widont } from '@/components/home/common'
+import { gradients } from '@/utils/gradients'
+import { ReactComponent as Icon } from '@/img/icons/home/constraint-based.svg'
 import { ReactComponent as RefactoringUi } from '@/img/resources/refactoring-ui.svg'
 import { ReactComponent as TailwindUi } from '@/img/resources/tailwind-ui.svg'
 import { ReactComponent as HeadlessUi } from '@/img/resources/headless-ui.svg'
@@ -15,32 +15,34 @@ function Logo({ title, component: Component }) {
         <Component className="absolute inset-0 w-full h-full" />
       </div>
     </div>
-  ) 
+  )
 }
 
-export default function Resources() {
+
+export function Services() {
+
   return (
-    <div className="px-4 sm:px-6 md:px-8 pt-10 pb-16">
-      <h1 className="text-3xl text-gray-900 font-extrabold mb-4">Resources</h1>
-      <div className="max-w-3xl">
-        <div className="text-lg mb-5 space-y-5">
-          <p>
-            We think Tachom Developer Groupis an amazing CSS framework, but you need more than just a CSS
-            framework to produce visually awesome work.
-          </p>
-          <p>
-            Here are some resources that can help you take your Tachom Developer Groupprojects to the next level.
-          </p>
-        </div>
-        <p>
-          For Tachom Developer Group  brand assets and usage guidelines, please visit our{' '}
-          <Link href="/brand">
-            <a className="text-cyan-700 font-medium shadow-link">Brand page</a>
-          </Link>
-          .
-        </p>
-      </div>
-      <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-8 my-8 sm:my-12">
+    <section id="constraint-based">
+      <div className="px-4 sm:px-6 md:px-8 mb-10 sm:mb-16 md:mb-20">
+        <IconContainer className={`${gradients.purple[0]} mb-8`}>
+          <Icon />
+        </IconContainer>
+        <Caption as="h2" className="text-purple-600 mb-3">
+          Our Services
+        </Caption>
+        <BigText className="mb-8">
+          <Widont>Things we do for Disruptive Brands.</Widont>
+        </BigText>
+        <Paragraph className="mb-6">
+          Utility classes help you work within the constraints of a system instead of littering your
+          stylesheets with arbitrary values. They make it easy to be consistent with color choices,
+          spacing, typography, shadows, and everything else that makes up a well-engineered design
+          system.
+        </Paragraph>
+        <Link href="/docs/utility-first" className="text-purple-600 hover:text-purple-800">
+          Learn more -&gt;
+        </Link>
+        <div className="grid md:grid-cols-2 gap-8 md:gap-6 xl:gap-8 my-8 sm:my-12">
         <section>
           <h2 className="text-xl text-gray-900 font-bold mb-4">Learn UI Design</h2>
           <a
@@ -153,19 +155,7 @@ export default function Resources() {
           </p>
         </section>
       </div>
-      <section>
-        <h2 className="text-2xl tracking-tight font-extrabold text-gray-900 mt-10 mb-8">
-          Get involved
-        </h2>
-        <Community />
-      </section>
-    </div>
+      </div>
+    </section>
   )
-}
-
-Resources.layoutProps = {
-  meta: {
-    title: 'Resources',
-  },
-  Layout: DocumentationLayout,
 }

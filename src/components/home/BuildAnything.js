@@ -177,8 +177,8 @@ const code = {
   </div>
   <div class="flex-auto pl-6">
     <div class="flex flex-wrap items-baseline pl-52 -mt-6 -mr-6 -ml-52 py-6 pr-6 bg-black text-white">
-      <h1 class="w-full flex-none text-2xl leading-7 mb-2 font-bold">Retro Shoe</h1>
-      <div class="text-2xl leading-7 font-bold">$110.00</div>
+      <h1 class="w-full flex-none text-3xl text-gray-700 leading-7 mb-2 font-bold">Retro Shoe</h1>
+      <div class="text-3xl text-gray-700 leading-7 font-bold">$110.00</div>
       <div class="text-sm font-medium ml-3">In stock</div>
     </div>
     <div class="flex items-baseline py-8">
@@ -246,92 +246,89 @@ export function BuildAnything() {
           Build anything
         </Caption>
         <BigText className="mb-8">
-          <Widont>Build whatever you want, seriously.</Widont>
+          <Widont>We build whatever you want, seriously.</Widont>
         </BigText>
-        <Paragraph className="mb-6">
-          Because Tachom Developer Groupis so low-level, it never encourages you to design the same site twice.
-          Even with the same color palette and sizing scale, it's easy to build the same component
-          with a completely different look in the next project.
+        <Paragraph className="mb-12">
+          We at Tachom Developer Group believe in the mantra that to achieve great results,
+          you have to believe and follow a set process religiously. That has
+          very much been the secret of our consistent success over the years.
+          Below are a few steps of the process that we follow.
         </Paragraph>
-        <Link href="/docs" className="text-orange-600 hover:text-orange-800">
-          Get started -&gt;
-        </Link>
-      </div>
-      <GradientLockup
-        color="orange"
-        rotate={-2}
-        pin="right"
-        header={
-          <div className="flex overflow-auto py-0.5 -my-0.5 pl-0.5 -mx-4 sm:-mx-6 md:-mx-8 xl:-ml-4 xl:mr-0">
-            <Tabs
-              tabs={{
-                simple: 'Simple',
-                playful: 'Playful',
-                elegant: 'Elegant',
-                brutalist: 'Brutalist',
-              }}
-              selected={theme}
-              onChange={setTheme}
-              className="mx-auto xl:mx-0 px-4 sm:px-6 md:px-8 xl:px-0"
-            />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              01
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Bring together the right people in the team
+            </p>
+            <p>
+              We manage everything from vetting to choosing the right people in the team for you.
+            </p>
           </div>
-        }
-        left={<HtmlZenGarden theme={theme} />}
-        right={
-          <CodeWindow className="bg-pink-600">
-            <CodeWindow.Code2 lines={lines.length}>
-              {lines.map((tokens, lineIndex) => (
-                <Fragment key={lineIndex}>
-                  {tokens.map((token, tokenIndex) => {
-                    if (token.content === '_') {
-                      let cls = classes[theme][classIndex++]
-                      return (
-                        <span
-                          key={cls}
-                          className={clsx('code-highlight', getClassNameForToken(token), {
-                            'animate-flash-code': !initial.current,
-                          })}
-                        >
-                          {cls}
-                        </span>
-                      )
-                    }
 
-                    if (token.content.includes('__content__')) {
-                      let text = content[theme][contentIndex++]
-                      return (
-                        <Fragment key={text}>
-                          {token.content.split(/(__content__)/).map((part, i) =>
-                            i === 1 ? (
-                              <span
-                                key={i}
-                                className={clsx('code-highlight', getClassNameForToken(token), {
-                                  'animate-flash-code': !initial.current,
-                                })}
-                              >
-                                {text}
-                              </span>
-                            ) : (
-                              part
-                            )
-                          )}
-                        </Fragment>
-                      )
-                    }
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              02
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Efficient sprint planning
+            </p>
+            <p>
+              We plan efficient sprint roadmap for team members to collaborate effectively.
+            </p>
+          </div>
 
-                    return (
-                      <span key={tokenIndex} className={getClassNameForToken(token)}>
-                        {token.content}
-                      </span>
-                    )
-                  })}
-                  {'\n'}
-                </Fragment>
-              ))}
-            </CodeWindow.Code2>
-          </CodeWindow>
-        }
-      />
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              03
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Code tech architecture
+            </p>
+            <p>
+              We decouple the codes which enable our team to work faster and independently.
+            </p>
+          </div>
+
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              04
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Iterative delivery approach
+            </p>
+            <p>
+              We break the implementation process into smaller pieces to deliver value incrementally.
+            </p>
+          </div>
+
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              05
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Code tech architecture
+            </p>
+            <p>
+              We identify issues like file leaks, memory leaks, and performance signs with code reviews.
+            </p>
+          </div>
+
+          <div className="p-4 shadow rounded-xl xl:h-64 space-y-4">
+            <p className={"text-orange-600 font-semibold"}>
+              06
+            </p>
+            <p className="text-3xl text-gray-700 lg:w-2/3 font-semibold">
+              Standups & demos
+            </p>
+            <p>
+              Weekly reviews, demos, and standups ensure coordination among team members and the client.
+            </p>
+          </div>
+
+        </div>
+      </div>
     </section>
   )
 }

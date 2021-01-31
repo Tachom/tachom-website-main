@@ -18,7 +18,7 @@ export function VersionSwitcher({ className }) {
   return (
     <form onSubmit={submit} className={clsx('relative', className)}>
       <label>
-        <span className="sr-only">Tachom Developer GroupCSS Version</span>
+        <span className="sr-only">Tachom Developer Group  Version</span>
         <select
           ref={selectRef}
           className="appearance-none block bg-transparent pr-7 py-1 text-gray-500 font-medium text-sm focus:outline-none focus:text-gray-900 transition-colors duration-200"

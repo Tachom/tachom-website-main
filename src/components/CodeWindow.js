@@ -16,7 +16,7 @@ const { tokens: defaultTokens } = tokenize.html(`<div class="flex pa-2 bg-white 
     <div class="flex space-between">
       <div>
         <h2 class="font-semibold">Guillermo Rauch</h2>
-        <small class="text-sm text-gray-500">CEO Vercel</small>
+        <small class="text-sm text-gray-500">Co-Founder Vercel</small>
       </div>
       <a href="https://twitter.com/rauchg" class="text-blue-500
         rounded-md p-1">View Tweet</a>

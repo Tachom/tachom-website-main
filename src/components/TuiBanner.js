@@ -61,10 +61,10 @@ export function TuiBanner() {
                 <span className="hidden lg:inline text-gray-400">
                   <strong className="text-white font-semibold mr-1">Now in early access!</strong>
                   <span className="xl:hidden">
-                    Beautiful UI components by the creators of Tachom Developer GroupCSS.
+                    Beautiful UI components by the creators of Tachom Developer Group .
                   </span>
                   <span className="hidden xl:inline">
-                    Beautiful UI components, crafted by the creators of Tachom Developer GroupCSS.
+                    Beautiful UI components, crafted by the creators of Tachom Developer Group .
                   </span>
                 </span>
               </p>

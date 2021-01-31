@@ -10,7 +10,7 @@ export function DocumentationLayout(props) {
 
   return (
     <>
-      <Title suffix={router.pathname === '/' ? undefined : 'Tachom Developer GroupCSS'}>
+      <Title suffix={router.pathname === '/' ? undefined : 'Tachom Developer Group '}>
         {props.layoutProps.meta.metaTitle || props.layoutProps.meta.title}
       </Title>
       <Head>

@@ -285,64 +285,7 @@ export function StateVariants() {
             </section>
           </div>
         }
-        right={
-          <CodeWindow className="bg-light-blue-500">
-            <CodeWindow.Code2 ref={codeContainerRef} lines={lines.length}>
-              <div
-                ref={linesContainerRef}
-                className={clsx('mono', { 'mono-active': states.length > 0 })}
-              >
-                {lines.map((tokens, lineIndex) => (
-                  <div
-                    key={lineIndex}
-                    className={
-                      (states.includes('new-btn-hover') &&
-                        lineIndex >= lineRanges['new-btn-hover'][0] &&
-                        lineIndex <= lineRanges['new-btn-hover'][1]) ||
-                      (states.includes('input-focus') &&
-                        lineIndex >= lineRanges['input-focus'][0] &&
-                        lineIndex <= lineRanges['input-focus'][1]) ||
-                      (states.includes('item-hover') &&
-                        lineIndex >= lineRanges['item-hover'][0] &&
-                        lineIndex <= lineRanges['item-hover'][1]) ||
-                      (states.includes('new-hover') &&
-                        lineIndex >= lineRanges['new-hover'][0] &&
-                        lineIndex <= lineRanges['new-hover'][1])
-                        ? 'not-mono'
-                        : ''
-                    }
-                  >
-                    {tokens.map((token, tokenIndex) => {
-                      if (
-                        token.types[token.types.length - 1] === 'class' &&
-                        token.content.startsWith('(')
-                      ) {
-                        const [, state] = token.content.match(/^\(([^)]+)\)/)
-                        return (
-                          <span
-                            key={tokenIndex}
-                            className={clsx(
-                              'code-highlight transition-colors duration-500',
-                              getClassNameForToken(token),
-                              { 'bg-code-highlight': states.includes(state) }
-                            )}
-                          >
-                            {token.content.substr(token.content.indexOf(')') + 1)}
-                          </span>
-                        )
-                      }
-                      return (
-                        <span key={tokenIndex} className={getClassNameForToken(token)}>
-                          {token.content}
-                        </span>
-                      )
-                    })}
-                  </div>
-                ))}
-              </div>
-            </CodeWindow.Code2>
-          </CodeWindow>
-        }
+        right={<></>}
       />
     </section>
   )

@@ -16,7 +16,7 @@ export function Community() {
           </svg>
           <div className="flex-auto">
             <h3 className="font-bold text-gray-900">GitHub Discussions</h3>
-            <p>Connect with members of the Tachom Developer GroupCSS community.</p>
+            <p>Connect with members of the Tachom Developer Group  community.</p>
           </div>
         </a>
       </li>

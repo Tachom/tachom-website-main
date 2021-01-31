@@ -18,7 +18,7 @@ export function Header({ navIsOpen, onNavToggle }) {
                 Router.push('/brand')
               }}
             >
-              <span className="sr-only">Tachom Developer GroupCSS home page</span>
+              <span className="sr-only">Tachom Developer Group  home page</span>
               <Logo className="w-auto h-6" />
             </a>
           </Link>
@@ -31,7 +31,7 @@ export function Header({ navIsOpen, onNavToggle }) {
               href="https://github.com/Tachom"
               className="text-gray-400 hover:text-gray-500 transition-colors duration-200"
             >
-              <span className="sr-only">Tachom Developer GroupCSS on GitHub</span>
+              <span className="sr-only">Tachom Developer Group  on GitHub</span>
               <svg width="20" height="20" viewBox="0 0 16 16" fill="currentColor">
                 <path
                   fillRule="evenodd"

@@ -243,13 +243,13 @@ function createPrevals({ tool: pageTool = error('UNKNOWN') } = {}) {
               outdatedVersions.length === 1 ? "doesn't" : "don't"
             } support PostCSS 8 yet${
               soon ? " _(but it's coming soon)_" : ''
-            } so you need to install [the Tachom Developer GroupCSS v2.0 PostCSS 7 compatibility build](/docs/installation#post-css-7-compatibility-build) for now as we've shown above.`
+            } so you need to install [the Tachom Developer Group  v2.0 PostCSS 7 compatibility build](/docs/installation#post-css-7-compatibility-build) for now as we've shown above.`
           : ''
 
       return md(`
-        ## Setting up Tachom Developer GroupCSS
+        ## Setting up Tachom Developer Group 
 
-        *Tachom Developer GroupCSS requires Node.js 12.13.0 or higher.*
+        *Tachom Developer Group  requires Node.js 12.13.0 or higher.*
 
         ### Install Tachom Developer Groupvia npm
 
@@ -310,7 +310,7 @@ function createPrevals({ tool: pageTool = error('UNKNOWN') } = {}) {
         You're finished! Now when you run ${joinAsSpeech(
           scripts.map(quote('`')),
           ' or '
-        )}, Tachom Developer GroupCSS will be ready to use in your ${tool} project.
+        )}, Tachom Developer Group  will be ready to use in your ${tool} project.
 
         [Next learn about the utility-first workflow &rarr;](/docs/utility-first)
       `)

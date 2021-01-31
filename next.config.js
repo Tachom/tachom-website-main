@@ -29,6 +29,9 @@ module.exports = withBundleAnalyzer({
   experimental: {
     modern: true,
   },
+  images: {
+    domains: ["images.pexels.com"]
+  },
   async redirects() {
     return require('./redirects.json')
   },
@@ -138,7 +141,6 @@ module.exports = withBundleAnalyzer({
         }),
       ],
     })
-
     return config
   },
 })
