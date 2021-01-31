@@ -1,4 +1,4 @@
-import { BigText, Paragraph } from "@/components/home/common";
+import { BigText, Paragraph } from "../../components/home/common";
 import Head from "next/head";
 import { Image, useQuerySubscription } from "react-datocms";
 import { request } from "../../lib/dato"

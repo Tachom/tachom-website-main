@@ -5,7 +5,7 @@ Tachom Developer Group  uses [Next.js](https://nextjs.org/) for its documentatio
 1. Clone this repo
 
     ```sh
-    git clone https://github.com/Tachom.com.git
+    git clone https://github.com/tate2301/tachomv2.git
     ```
 
 2. Go into the project root directory
