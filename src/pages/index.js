@@ -46,7 +46,7 @@ export default function Home({data}) {
               to your brilliant, <InlineCode>disruptive idea</InlineCode>. You are going to love it very very much.
             </p>
             <div className="flex flex-wrap space-y-4 sm:space-y-0 sm:space-x-4 text-center">
-              <NextLink href="#">
+              <NextLink href="https://ojn1yd5k2bm.typeform.com/to/nA3tGPK2" target="_blank">
                 <a className="w-full sm:w-auto flex-none bg-red-600 hover:bg-red-500 text-white text-lg leading-6 font-semibold py-3 px-6 border border-transparent rounded-xl focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-gray-900 focus:outline-none transition-colors duration-200">
                   Tell us your idea
                 </a>
